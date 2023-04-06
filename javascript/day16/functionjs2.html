@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="n1" >
+    <input type="number" id="n2" >
+
+    <button onclick="prit('+')" >+</button>
+    <button onclick="prit('-')" >-</button>
+    <button onclick="prit('*')" >*</button>
+    <button onclick="prit('/')" >/</button>
+    <button onclick="prit1()" >Thanks</button>
+
+
+    <h1 id="display"></h1>
+    <script>
+        function prit1(){
+            alert('You are welcome');
+        }
+
+        
+        function prit(x){
+            let num1= document.getElementById('n1').value;
+            let num2= document.getElementById('n2').value;
+            // document.getElementById('display').innerText=(Number(num1)+Number(num2));
+
+            if(x == '+'){document.getElementById('display').innerText= ('Add: ')+(Number(num1)+Number(num2));}
+            else if(x == '-'){document.getElementById('display').innerText= ('Sub: ')+(Number(num1)-Number(num2));}
+            else if(x == '/'){document.getElementById('display').innerText= ('Divide: ')+(Number(num1)/Number(num2));}
+            else if(x == '*'){document.getElementById('display').innerText= ('Multiply: ')+(Number(num1)*Number(num2));}
+        }
+
+        var a= 1 ;
+        a+=10
+        console.log(a);
+
+
+        let x=10;
+        let y=9 ;
+
+        console.log(x==1 || y==9 );
+    </script>
+    
+</body>
+</html>

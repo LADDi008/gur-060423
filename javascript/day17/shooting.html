@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+   /* .b{border: 2px solid black;} */
+   .row{margin:0px}
+  </style>
+</head>
+<body>
+
+    <nav class="row bg-danger p-5">
+       
+<div class="col-4 ps-5 b"><h2 id="bullets" >Bullets: 5 </h2></div>
+<div class="col-4 text-center b"><button class="btn bg-light" onclick="relo()"> Reload</button><!-- <button class="btn bg-light" onclick="start()"> Start</button> --> </div>
+<div class="col-4 pe-5 text-end b" ><h2 id="score">Score: 0 </h2></div>
+       
+    </nav>
+    
+    <div class="target text-center" style="position:absolute">
+        <button class="p-5  btn btn-primary rounded-5" onclick="tar()" >
+    </div>
+
+    
+
+    <div  style="height:100vh;" onclick="bo()" > </div>
+    
+
+    <script>
+        var bullets=5;
+        var score=0;
+
+var y=1;
+
+function tar(){
+      
+if(bullets==0){
+            alert("Game Over");
+        }
+        else{
+       
+             document.getElementById('bullets').innerHTML='Bullets: '+ --bullets;
+            document.getElementById('score').innerHTML='Score: '+score;
+            score++;
+      
+        
+    }
+}
+        function bo(){
+            
+            document.getElementById('bullets').innerHTML='Bullets: '+bullets--;
+        
+            
+            if(bullets==-1){
+            alert("Game Over");}
+        }
+        
+        
+        function relo(){
+            bullets=5;
+            document.getElementById('bullets').innerHTML='Bullets: '+bullets;
+
+        }
+      
+
+
+
+
+
+
+
+
+
+
+
+        // function start(){
+        //     if(bullets=5){
+        //         document.getElementById('bullets').innerHTML='Bullets: '+5;
+           
+        //     document.getElementById('score').innerHTML='Score: '+0;
+        
+        //     }
+        // }
+
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            name:"xyz" ,
+            class:12,
+            rollno:1,
+            gender:{
+                abc:"male"
+                
+            }
+        }
+        console.log(obj.name);
+        console.log(obj);
+
+       obj.name="abc"
+       console.log(obj);
+
+       delete obj.rollno
+       console.log(obj);
+
+
+       Object.assign(obj,{phone:123234567 })
+       console.log(obj);
+
+// map 
+       let a =[ 1,2,3,4,5,6];
+    
+       let a2=a.map((val)=>{
+       return val+2
+       })
+       console.log("map"+a,a2);
+
+// filter 
+       let a3=a.filter((val)=>{
+return val<2
+       })
+       console.log(a,a3);
+
+// reduce 
+      let a4=a.reduce((val,val2)=>{
+        return val+val2
+      })
+      console.log(a,a4);
+
+
+      var abc =[
+        { name:"xyz" ,rollno:1 },
+        { name:"xyz" ,rollno:2 },
+        { name:"xyz" ,rollno:3 },
+        { name:"xyz" ,rollno:4 },
+        { name:"xyz" ,rollno:5 },
+        { name:"zyx" ,rollno:6 }
+      ]
+      console.log(abc);
+//       let a3=a.filter((val)=>{
+// return val<2
+//        })
+    </script>
+</body>
+</html>

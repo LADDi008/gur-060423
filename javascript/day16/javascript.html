@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ Enter the time   
+ <input type="number" id="num1" >
+<!-- <input type="number" id="num1" >
+<input type="number" id="num2" >
+<button onclick="sum()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="divide()">/</button>
+<button onclick="multi()">*</button>
+ -->
+ <button onclick="hour()">Enter the Hour</button>
+
+<h1 id="display"></h1>
+
+
+  <script>
+
+
+
+// function sum(){
+//     let n1 = document.getElementById("num1").value;
+//     let n2 = document.getElementById("num2").value;
+//     let sum =Number(n1) + Number(n2); 
+//       let s="Sum:"
+//     document.getElementById("display").innerHTML=String(s) + Number(sum);
+// }
+// function sub(){
+//     let n1 = document.getElementById("num1").value;
+//     let n2 = document.getElementById("num2").value;
+//     let sum =Number(n1) - Number(n2); 
+//     let s="Sub:"
+//     document.getElementById("display").innerHTML=String(s) + Number(sum);
+// }
+// function divide(){
+//     let n1 = document.getElementById("num1").value;
+//     let n2 = document.getElementById("num2").value;
+//     let sum =Number(n1) / Number(n2); 
+//     let s="Divide:"
+//     document.getElementById("display").innerHTML=String(s) + Number(sum);
+// }
+// function multi(){
+//     let n1 = document.getElementById("num1").value;
+//     let n2 = document.getElementById("num2").value;
+//     let sum =Number(n1) * Number(n2); 
+//     let s="Multiply:"
+//     document.getElementById("display").innerHTML=String(s) + Number(sum);
+// }
+
+function hour(){
+
+let h = document.getElementById("num1").value;
+
+if(h >= 1 && h < 12 ){
+    let s="Good morning";
+alert(s);
+    document.getElementById('display').innerText=String(s);
+}
+else if(h >= 12 && h < 15){
+    let s="Good afternoon"
+    alert(s);
+    document.getElementById('display').innerText=String(s);
+}
+else if(h >= 15 && h < 18){
+    let s="Good Evening";
+    alert(s);
+    document.getElementById('display').innerText=String(s);
+}
+else if(h >= 18 && h < 23){
+    let s="Have a Good Night";
+    alert(s);
+    document.getElementById('display').innerText=String(s);
+}
+else{
+    let s="Have a Hell";
+    alert(s);
+    document.getElementById('display').innerText=String(s);
+}
+
+}
+  </script>  
+</body>
+</html>

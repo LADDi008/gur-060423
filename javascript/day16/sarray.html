@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr =["hello","hai","how are you"]
+        document.write(arr + "<br>");
+        arr.unshift("ishpreet")
+        document.write(arr+ "<br>");
+
+        arr.shift()
+        document.write(arr+ "<br>");
+        arr.pop()
+        document.write(arr+ "<br>");
+
+
+        arr.sort();
+        document.write(arr +"<br>")
+
+        arr.reverse()
+
+        document.write(arr +"<br>")
+
+        
+        document.write(arr.length +"<br>")
+
+
+        var arr1 =["a" ,"b","c","d"]
+
+        var x=arr1.slice(0,2)
+
+        document.write(x +"<br>")
+
+        arr1.splice(1,0,"hksghc")
+        document.write(arr1+"<br>")
+
+        var join= arr1.join("-")
+        document.write(join)
+
+
+
+
+
+
+        // strings 
+
+        var str="hello javacsript are?"
+        console.log(str)
+
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+console.log(str.charAt(7));
+console.log(str.charCodeAt(7));
+
+console.log(str.startsWith("hello"));
+console.log(str.endsWith("?"));
+
+console.log(str.lastIndexOf("a"));
+console.log(str.indexOf("a"));
+
+console.log(str.includes("z"));
+console.log(str.search("are"));
+console.log(str.match("java"));
+
+console.log(str.length);
+console.log(str.repeat(10));
+console.log(str.replace("hello javacsript are?","ishpreet"));
+console.log(str.slice(0,10));
+
+let name ="ish,preet";
+let y=name.split(",");
+console.log(y);
+    </script>
+</body>
+</html>

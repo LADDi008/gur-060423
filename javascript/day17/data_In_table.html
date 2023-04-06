@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .card{
+        background-color:transparent;
+        background-color: whitesmoke;
+        backdrop-filter: blur(50px);
+    }
+    /* table, th,td{border: 2px solid black;} */
+    /* body{background-color:darkcyan} */
+</style>
+</head>
+<body class="">
+    
+<!-- ------------row-1------------- -->
+<div class="row pt-3 m-0  ">
+ 
+        <div class="col-4 "></div>
+    <div class="col-4 ">
+        <div class="card">
+            <table>
+     <tr> <th>Name</th><th>Age</th><th>Occupation</th></tr>
+     <!-- <tr> <td  ><img id="img0" height="70vh"></td></tr> -->
+     <tr> <td  id="name0"><img height="70vh"></td> <td id="age0"></td> <td id="job0"></td></tr>
+     <tr> <td id="name1"></td> <td id="age1"></td> <td id="job1"></td></tr>
+     <tr> <td id="name2"></td> <td id="age2"></td> <td id="job2"></td></tr>
+     <tr> <td id="name3"></td> <td id="age3"></td> <td id="job3"></td></tr>
+     <tr> <td id="name4"></td> <td id="age4"></td> <td id="job4"></td></tr>
+     <tr> <td id="name5"></td> <td id="age5"></td> <td id="job5"></td></tr>
+     <tr> <td id="name6"></td> <td id="age6"></td> <td id="job6"></td></tr>
+     <tr> <td id="name7"></td> <td id="age7"></td> <td id="job7"></td></tr>
+     <tr> <td id="name8"></td> <td id="age8"></td> <td id="job8"></td></tr>
+     <tr> <td id="name9"></td> <td id="age9"></td> <td id="job9"></td></tr>
+                
+            </table>
+            <!-- <img src="https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1" >
+              -->
+            
+        </div>
+        
+    </div>
+
+</div>    
+
+
+
+    <script>
+let emp=[
+    {img:"https://th.bing.com/th/id/OIP.PYipJ_hSncugM2SwnZitvgHaEK?pid=ImgDet&rs=1 " ,id:1,Name:'Abc', Age:20, Occupation:'Job1'},
+    {id:2,Name:'Cde', Age:23, Occupation:'Job2'},
+    {id:3,Name:'Efg', Age:26, Occupation:'Job3'},
+    {id:4,Name:'Ghi', Age:21, Occupation:'Job4'},
+    {id:5,Name:'Ijk', Age:29, Occupation:'Job5'},
+    {id:6,Name:'Klm', Age:24, Occupation:'Job6'},
+    {id:7,Name:'Mp1', Age:26, Occupation:'Job7'},
+    {id:8,Name:'Ac3', Age:25, Occupation:'Job8'},
+    {id:9,Name:'Ab8', Age:20, Occupation:'Job9'},
+    {id:10,Name:'Boc', Age:20, Occupation:'Job10'}
+]
+
+// for(var i=0; i<emp.length;i++){
+//     document.getElementById(`${i}`).innerText="Name: "+emp[i].Name+ "\n"+"Age: "+emp[i].Age + "\n"+"Occupation: "+emp[i].Occupation;
+// }
+// var i=0;
+// let a2=emp.map((val)=>{
+
+    
+//     document.getElementById('name'+i).innerText=emp[i].Name;
+//     document.getElementById('age'+i).innerText=emp[i].Age;
+//     document.getElementById('job'+i).innerText=emp[i].Occupation;
+    
+//     i++;
+// })
+
+var a=emp.filter((val)=>{
+    // return val.Name.startsWith('A');
+    return val.Age>10;
+})
+
+a.map((val,i)=>{
+
+
+    // document.getElementById('img'+i).src=val.img; 
+    document.getElementById('name'+i).innerText=val.Name;
+    document.getElementById('age'+i).innerText=val.Age;
+    document.getElementById('job'+i).innerText=val.Occupation;
+    
+    
+})
+
+    </script>
+    
+</body>
+</html>
